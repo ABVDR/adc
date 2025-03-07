@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="home">
+        <div class="headerbg">
+            <header>
+                <div class="container">
+                    <div class="navbar flex1">
+                        <div class="logo">
+                            <img src="img/1.jpg" alt="">
+
+                        </div>
+
+                        <nav>
+                            <ul id="menu">
+                                <li> <a href="#">Home</a> </li>
+                                <li> <a href="#">Movies</a> </li>
+                                <li> <a href="#">Tv Shows</a> </li>
+                                <li> <a href="#">Video</a> </li>
+                                <li> <a href="#">Account</a> </li>
+                            </ul>
+                        </nav>
+                        <span class="fa fa-bars" onclick="menutoggle()"></span>
+                        <div class="subcribe flex">
+                            <i class="fas fa-search"></i>
+                            <i id="playbtn" class="fas fa-user"></i>
+                            <button>SUBSRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="home_content motop">
+                <div class="container">
+                    <div class="left">
+                        <h1>TẾT Ở LÀNG ĐỊA NGỤC</h1>
+                        <div class="time flex">
+                            <label>R</label>
+                            <i class="fas fa-circle"></i>
+                            <span>1 hrs 50mins</span>
+                            <i class="fas fa-circle"></i>
+                            <p>2021</p>
+                            <i class="fas fa-circle"></i>
+                            <button>Action</button>
+                        </div>
+
+                        <p>Welcome to our channel "Dot Studio". I created this channel with the aim to help you to learn
+                            Website development, blogging, and other technical things.
+                            ovie website, responsive website using html, how to make website using html and css,movie
+                        </p>
+
+                        <div class="button flex">
+                            <button class="btn">PLAY NOW</button>
+                            <i id="playbtn" class="fas fa-play"></i>
+                            <p>WATCH TRALER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        var menu = document.getElementById("menu");
+        menu.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menu.style.maxHeight == '0px') {
+                menu.style.maxHeight = "200px"
+            } else {
+                menu.style.maxHeight = "0px"
+            }
+        }
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scroll > 50);
+
+        })
+
+    </script>
+
+
+    <section class="popular mtop">
+        <div class="container">
+            <div class="heading flex1">
+                <h2>Most Popular</h2>
+                <button>MORE VIDEO</button>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/th.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/9.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/6.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/2.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/3.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/7.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/8.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+    </section>
+    <section class="popular mtop">
+        <div class="container">
+            <div class="heading flex1">
+                <h2>Most Viewed</h2>
+                <button>MORE VIDEO</button>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/12.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/13.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/6.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/2.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/3.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/7.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/8.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            dots: false,
+            nav: true,
+            responsive: {
+                411: {
+                    items: 1
+                },
+                500: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+
+    <section class="new_realase top">
+        <div class="container">
+            <div class="owl-carousel owl-carousel2 owl-theme">
+                <div class="items">
+                    <div class="left">
+                        <div class="img">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                        <div class="heading">
+                            <h2><span></span>NEW REALEASR</h2>
+                            <h1>THE WARRIOR</h1>
+                        </div>
+                        <div class="time flex">
+                            <label>R</label>
+                            <i class="fas fa-circle"></i>
+                            <span>1 hrs 50mins</span>
+                            <i class="fas fa-circle"></i>
+                            <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 8.5</a>
+                            <i class="fas fa-circle"></i>
+                            <p>2021</p>
+                            <i class="fas fa-circle"></i>
+                            <button>Action</button>
+                        </div>
+                        <p>How To Create a Responsive Movie Website Using HTML CSS And jQuery Create a Responsive Movie
+                            Website</p>
+                        <div class="button flex">
+                            <button type="button" name="button" class="btn">PLAY NOW</button>
+                            <i id="playbtn" class="fas fa-play"></i>
+                            <p>WATCH TRAILER</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="left">
+                        <div class="img">
+                            <img src="img/13.jpg" alt="">
+                        </div>
+                        <div class="heading">
+                            <h2><span></span>NEW REALEASR</h2>
+                            <h1>THE WARRIOR</h1>
+                        </div>
+                        <div class="time flex">
+                            <label>R</label>
+                            <i class="fas fa-circle"></i>
+                            <span>1 hrs 50mins</span>
+                            <i class="fas fa-circle"></i>
+                            <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 8.5</a>
+                            <i class="fas fa-circle"></i>
+                            <p>2021</p>
+                            <i class="fas fa-circle"></i>
+                            <button>Action</button>
+                        </div>
+                        <p>How To Create a Responsive Movie Website Using HTML CSS And jQuery Create a Responsive Movie
+                            Website</p>
+                        <div class="button flex">
+                            <button type="button" name="button" class="btn">PLAY NOW</button>
+                            <i id="playbtn" class="'fas fa-play"></i>
+                            <p>WATCH TRAILER</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="left">
+                        <div class="img">
+                            <img src="img/9.jpg" alt="">
+                        </div>
+                        <div class="heading">
+                            <h2><span></span>NEW REALEASR</h2>
+                            <h1>THE WARRIOR</h1>
+                        </div>
+                        <div class="time flex">
+                            <label>R</label>
+                            <i class="fas fa-circle"></i>
+                            <span>1 hrs 50mins</span>
+                            <i class="fas fa-circle"></i>
+                            <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 8.5</a>
+                            <i class="fas fa-circle"></i>
+                            <p>2021</p>
+                            <i class="fas fa-circle"></i>
+                            <button>Action</button>
+                        </div>
+                        <p>How To Create a Responsive Movie Website Using HTML CSS And jQuery Create a Responsive Movie
+                            Website</p>
+                        <div class="button flex">
+                            <button type="button" name="button" class="btn">PLAY NOW</button>
+                            <i id="playbtn" class="'fas fa-play"></i>
+                            <p>WATCH TRAILER</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="left">
+                        <div class="img">
+                            <img src="img/th.jpg" alt="">
+                        </div>
+                        <div class="heading">
+                            <h2><span></span>NEW REALEASR</h2>
+                            <h1>THE WARRIOR</h1>
+                        </div>
+                        <div class="time flex">
+                            <label>R</label>
+                            <i class="fas fa-circle"></i>
+                            <span>1 hrs 50mins</span>
+                            <i class="fas fa-circle"></i>
+                            <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 8.5</a>
+                            <i class="fas fa-circle"></i>
+                            <p>2021</p>
+                            <i class="fas fa-circle"></i>
+                            <button>Action</button>
+                        </div>
+                        <p>How To Create a Responsive Movie Website Using HTML CSS And jQuery Create a Responsive Movie
+                            Website</p>
+                        <div class="button flex">
+                            <button type="button" name="button" class="btn">PLAY NOW</button>
+                            <i id="playbtn" class="'fas fa-play"></i>
+                            <p>WATCH TRAILER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel2').owlCarousel({
+            loop: true,
+            margin: 20,
+            dots: false,
+            nav: true,
+            items: 1
+        })
+    </script>
+
+    <section class="popular mtop">
+        <div class="container">
+            <div class="heading flex1">
+                <h2>Powweful Crime Thrilers</h2>
+                <button>MORE VIDEO</button>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/12.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/13.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/6.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/2.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/3.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/7.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/8.jpg" alt="">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="contenct">
+                            <i id="playbtn" class="fas fa-play"></i>
+                        </div>
+                        <div class="text">
+                            <h3>My Generation</h3>
+                            <div class="time flex1">
+                                <span>1hr 50mins</span>
+                                <a href="#">Action</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            dots: false,
+            nav: true,
+            responsive: {
+                411: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+
+<footer>
+    <div class="container top">
+      <div class="box">
+        <div class="logo">
+          <img src="img/logo.png">
+        </div>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="icon">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-youtube-square"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Explore</h2>
+        <div class="flex">
+          <ul>
+            <li>Home</li>
+            <li>Tv Shows</li>
+            <li>Actors</li>
+            <li>Celebrity</li>
+          </ul>
+          <ul class="ul">
+            <li>Movie</li>
+            <li>Video</li>
+            <li>Basketball</li>
+            <li>Coress</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box ">
+        <h2>Company</h2>
+        <div class="flex">
+          <ul>
+            <li>Company</li>
+            <li>Terms of Use</li>
+            <li>Contact us</li>
+            <li>Our Team</li>
+          </ul>
+          <ul class="ul">
+            <li>Privacy Policy</li>
+            <li>Helps Center</li>
+            <li>Subscribe</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Download App</h2>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="img flex1">
+          <img src="img/app1.png" alt="">
+          <img src="img/app2.png" alt="">
+        </div>
+      </div>
+    </div>
+    <p class="legal">Copyright (c) 2021 Copyright Holder All Rights Reserved | This template is made By <i class="fas fa-heart"></i> Dot Studio</p>
+  </footer>
+</body>
+
+</html>
